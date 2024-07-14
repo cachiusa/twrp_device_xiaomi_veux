@@ -15,6 +15,10 @@ ALLOW_MISSING_DEPENDENCIES=true
 # Force default locale
 LC_ALL="C"
 
+# Boot-as-recovery (legacy)
+# Set this to 0 to build boot image instead of vendor_boot image
+TW_VNDR_BOOT=${TW_VNDR_BOOT:-1}
+
 set +a
 #
 # Call other setup scripts

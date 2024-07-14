@@ -8,7 +8,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # A/B
+ifeq ($(TW_VNDR_BOOT),1)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+else
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch.mk)
+endif
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
