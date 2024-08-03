@@ -49,6 +49,6 @@ check_submodule () {
     fi
 }
 
-echo "[ INFO ] Checking for dependencies..."
+#echo "[ INFO ] Checking for dependencies..."
 
-check_submodule https://github.com/dereference23/kernel_xiaomi_sm6375 kernel/xiaomi/sm6375
+#check_submodule https://github.com/dereference23/kernel_xiaomi_sm6375 kernel/xiaomi/sm6375
